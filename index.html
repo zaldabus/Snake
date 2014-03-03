@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="underscore.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="snake.js"></script>
+  <script src="board.js"></script>
+  <script src="snakeUI.js"></script>
+</head>
+
+<body>
+  <h1>Snake!</h1>
+
+  <pre></pre>
+</body>
+
+<style>
+
+body, ul, li {
+  margin: 5;
+  padding: 0;
+  border: 0;
+}
+h1 {
+  text-align: center;
+}
+
+div{
+  margin: 0 auto;
+  width: 408px;
+}
+  ul {
+    list-style: none;
+    width: 110px;
+    float: left;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+  li {
+    width: 90px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 2px dotted white;
+    margin: 0 auto;
+  }
+
+  ul:hover {
+    background: gray;
+  }
+
+  .group:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #selected {
+    background: red;
+  }
+
+  li.smalldisc {
+    width: 50px;
+    height: 20px;
+    background: green;
+    border: 2px solid gray;
+  }
+
+  li.mediumdisc {
+    width: 70px;
+    height: 20px;
+    background: blue;
+    border: 2px solid gray;
+  }
+
+  li.largedisc {
+    width: 90px;
+    height: 20px;
+    background: pink;
+    border: 2px solid gray;
+  }
+
+</style>
+</html>
